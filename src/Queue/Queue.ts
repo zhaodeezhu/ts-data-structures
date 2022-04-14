@@ -13,11 +13,11 @@ export class Queue<T> {
   items: IItem<T> = {};
 
   /** 入列 */
-  protected enqueue(element: T) {
+  enqueue(element: T) {
     this.items[this.count++] = element;
   }
   /** 出列 */
-  protected dequeue() {
+  dequeue() {
     if(this.isEmpty()) {
       return undefined;
     }
@@ -26,7 +26,7 @@ export class Queue<T> {
     return result;
   }
   /** 查看头元素 */
-  protected peek() {
+  peek() {
     return this.items[this.lowestCount];
   }
   /** 是否为空 */
