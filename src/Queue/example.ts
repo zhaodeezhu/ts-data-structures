@@ -32,8 +32,8 @@ export function palindromeCheck(str: string) {
   }
   let isEqual = true;
   while(que.size() > 1 && isEqual) {
-    let frontChar = que.removeFront();
-    let backChar = que.removeBack();
+    const frontChar = que.removeFront();
+    const backChar = que.removeBack();
 
     if (frontChar !== backChar) {
       isEqual = false;
