@@ -23,7 +23,9 @@
     "eslint": "^8.15.0",
     "git-cz": "^4.9.0",
     "husky": "^8.0.1",
-    "standard-version": "^9.5.0"
+    "jest": "^28.1.0",
+    "standard-version": "^9.5.0",
+    "ts-jest": "^28.0.2"
   },
   "config": {
     "commitizen": {
