@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "release": "standard-version",
-    "lint": "eslint src --ext .js,.ts,.tsx"
+    "lint": "eslint src --ext .js,.ts,.tsx",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +27,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/git-cz"
     }
   }
 }

@@ -7,7 +7,7 @@ export function hotPotato<T>(list: T[], num: number) {
   const lowser: T[] = [];
   // 将数据压入队列
   list.forEach(item => {
-    queueList.enqueue(item);
+    queueList.enqueue(item); 
   })
   while(queueList.size() > 1) {
     for(let i = 0; i < num; i++) {
