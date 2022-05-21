@@ -6,6 +6,6 @@
   },
   "extends": ["plugin:@typescript-eslint/recommended"],
   "rules": {
-    
+    "padded-blocks": "off"
   }
 }

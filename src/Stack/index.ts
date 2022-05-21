@@ -6,7 +6,7 @@
  */
 export class Stack<T> {
   /** 数量 */
-  private count: number = 0;
+  private count = 0;
   /** 栈存储空间 */
   private items: {[index: number]: T} = {};
   
@@ -53,7 +53,7 @@ export class Stack<T> {
     if(this.isEmpty()) {
       return '';
     }
-    let str: string = `${this.items[0]}`;
+    let str = `${this.items[0]}`;
     for(let i = 1; i < this.count; i++) {
       str += `,${this.items[i]}`
     }

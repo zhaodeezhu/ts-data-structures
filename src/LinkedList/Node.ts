@@ -1,5 +1,8 @@
 /** 节点 */
 export class Node<T> {
+  constructor(element: T) {
+    this.element = element;
+  }
   element: T | null = null;
   next: Node<T> | null = null;
 }
