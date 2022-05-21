@@ -6,6 +6,17 @@
   },
   "extends": ["plugin:@typescript-eslint/recommended"],
   "rules": {
-    "padded-blocks": "off"
+    // 关闭块内首位行必须空行
+    "padded-blocks": "off",
+    // 禁止不规范的空格
+    "no-irregular-whitespace": "error",
+    // 禁止在行内注释
+    "no-inline-comments": "error",
+    // 不能用多余的空格
+    "no-multi-spaces": "error",
+    // 空行最多不能超过1行
+    "no-multiple-empty-lines": [2, {"max": 1}],
+    // 只能使用 T[] 的形式定义数组 https://typescript-eslint.io/rules/array-type
+    "@typescript-eslint/array-type": "error"
   }
 }
